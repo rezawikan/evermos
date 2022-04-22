@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
+
+// Colors
+$white-color: #fff;
+$white-grey: #e1e7ec;
+$grey-color: #606975;
+$low-grey-color: #9da9b9;
+$red-color: #ff5252;
+$blue-color: #0da9ef;
+$orange-color: #ffb74f;
+$black-color: #0000;
+
+// Screens
+$xl: 90em;
+$lg: 75em;
+$md: 64em;
+$sm: 48em;
+$xs: 30em;
+
+body {
+  font-family: 'Maven Pro';
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.5;
+}

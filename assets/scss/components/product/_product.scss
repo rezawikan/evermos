@@ -1,0 +1,172 @@
+.featured-product-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .product-card {
+    position: relative;
+    padding: 20px;
+    border: 1px solid $white-grey;
+    border-radius: 7px;
+    background-color: $white-color;
+    margin: 15px 0px;
+
+    .product-badge {
+      position: absolute;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      font-family: 'Segoe UI';
+    }
+
+    .product-thumb {
+      img {
+        width: 230px;
+      }
+    }
+
+    h3.product-title {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: normal;
+      text-align: center;
+      a {
+        transition: color 0.3s;
+        color: #374250;
+        text-decoration: none;
+      }
+    }
+
+    .product-price {
+      margin-bottom: 10px;
+      color: $grey-color;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+
+      > del {
+        margin-right: 5px;
+        color: #9da9b9;
+      }
+    }
+
+    .product-buttons {
+      padding: 12px 0 8px;
+      text-align: center;
+
+      .btn-wishlist {
+        width: 36px;
+        padding: 0;
+        padding-left: 1px;
+        border-radius: 50%;
+        margin: 0 4px;
+        border: solid 1px $white-grey;
+        height: 36px;
+        margin-left: -43px;
+
+        i {
+          font-size: 20px;
+          font-style: normal;
+          transition: 0.5s;
+          color: $grey-color;
+        }
+
+        &:hover {
+          cursor: pointer;
+          i {
+            color: $red-color;
+          }
+        }
+      }
+
+      .btn-wishlist.active {
+        i {
+          color: $red-color;
+        }
+      }
+
+      .btn-detail {
+        border-color: $blue-color;
+        background-color: transparent;
+        color: $blue-color;
+        border-radius: 18px;
+        border: 1px solid $blue-color;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        transition: 0.3s;
+        display: inline-block;
+        padding: 8px 38px 8px;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $blue-color;
+          color: $white-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* 320px — 480px: Mobile devices */
+@media screen and (max-width: 480px) {
+  .featured-product-list {
+    .product-card {
+      width: 100%;
+      .product-thumb {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .featured-product-list {
+    .product-card {
+      width: 43%;
+      .product-thumb {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .featured-product-list {
+    .product-card {
+      width: 43%;
+      .product-thumb {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .featured-product-list {
+    .product-card {
+      width: 28%;
+      .product-thumb {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* 1201px and more —  Extra large screens, TV */
+@media screen and (min-device-width: 1201px) and (max-device-width: 1440px) {
+}

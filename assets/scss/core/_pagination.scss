@@ -1,0 +1,118 @@
+.paginations {
+  width: 100%;
+  border-top: 1px solid $white-grey;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+
+  .column {
+    padding-top: 16px;
+
+    ul.pages {
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 34px;
+        text-align: center;
+
+        a {
+          display: block;
+          width: 36px;
+          height: 36px;
+          transition: all 0.3s;
+          border: 1px solid transparent;
+
+          color: $grey-color;
+          line-height: 34px;
+          text-decoration: none;
+        }
+
+        &.active {
+          border-color: $blue-color;
+          background-color: $blue-color;
+          color: $white-color;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .column.next-button {
+    width: 150px;
+    a.next {
+      text-decoration: none;
+      border-radius: 18px;
+      text-transform: uppercase;
+      border: 1px solid $white-grey;
+      outline: none;
+      padding: 15px 18px;
+      font-size: 12px;
+      width: 100%;
+      background-color: $white-color;
+      color: #606975;
+
+      i {
+        font-size: 20px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+/* 320px — 480px: Mobile devices */
+@media screen and (max-width: 480px) {
+  .column.next-button {
+    display: none;
+  }
+
+  .paginations {
+    flex-direction: column;
+    .column {
+      margin: 0 auto;
+    }
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .column.next-button {
+    display: none;
+  }
+
+  .paginations {
+    flex-direction: column;
+    .column {
+      margin: 0 auto;
+    }
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .column.next-button {
+    display: none;
+  }
+
+  .paginations {
+    flex-direction: column;
+    .column {
+      margin: 0 auto;
+    }
+  }
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+}
+
+/* 1201px and more —  Extra large screens, TV */
+@media screen and (min-device-width: 1201px) and (max-device-width: 1440px) {
+}
