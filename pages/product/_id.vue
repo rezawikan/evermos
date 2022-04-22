@@ -121,7 +121,7 @@ export default {
               reviews</span
             >
           </div>
-          <h2 class="product-title mobile">{{ product.name }}</h2>
+          <h2 class="product-title mobile">{{ product.product_name }}</h2>
           <span class="product-price mobile">
             <del class="text-muted">${{ product.price }}</del
             >&nbsp;${{ this.discountPrice }}
