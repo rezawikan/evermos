@@ -1,7 +1,9 @@
 section.product-detail {
   .menu-back {
     background-color: $white-grey;
-    margin-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
     a {
       text-decoration: none;
       font-style: normal;

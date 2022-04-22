@@ -107,7 +107,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container" v-if="product">
+    <div class="container mt-100" v-if="product">
       <div class="row">
         <div class="col-md-12">
           <div class="rating-summaries mobile">
