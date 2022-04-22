@@ -35,8 +35,8 @@ export default {
         <a href="#">{{ item.product_name }}</a>
       </h3>
       <h4 class="product-price" v-if="item">
-        <del>${{ discountPrice(item) }}</del
-        >${{ item.price }}
+        <del>${{ item.price }}</del
+        >${{ discountPrice(item) }}
       </h4>
       <div class="product-buttons">
         <button class="btn-wishlist">
